@@ -12,8 +12,7 @@
       "displayName": "Package Hub",
       "description": "The package browser/installer tool itself - can be used to update itself.",
       "repoUrl": "https://github.com/areezkhan79/upm-package-hub.git",
-      "category": "Tools",
-      "dependencies": ["com.areezkhan79.starter"]
+      "category": "Tools"
     }
   ]
 }
