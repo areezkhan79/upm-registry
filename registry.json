@@ -1,18 +1,28 @@
 {
-  "packages": [
-    {
-      "name": "com.areezkhan79.starter",
-      "displayName": "UPM Starter",
-      "description": "Starter/template module used to validate the git-based install pipeline.",
-      "repoUrl": "https://github.com/areezkhan79/upm-starter.git",
-      "category": "Examples"
-    },
-    {
-      "name": "com.areezkhan79.packagehub",
-      "displayName": "Package Hub",
-      "description": "The package browser/installer tool itself - can be used to update itself.",
-      "repoUrl": "https://github.com/areezkhan79/upm-package-hub.git",
-      "category": "Tools"
-    }
-  ]
+    "packages": [
+        {
+            "name": "com.areezkhan79.starter",
+            "displayName": "UPM Starter",
+            "description": "Starter/template module used to validate the git-based install pipeline.",
+            "repoUrl": "https://github.com/areezkhan79/upm-starter.git",
+            "category": "Examples",
+            "dependencies": []
+        },
+        {
+            "name": "com.areezkhan79.packagehub",
+            "displayName": "Package Hub",
+            "description": "The package browser/installer tool itself - can be used to update itself.",
+            "repoUrl": "https://github.com/areezkhan79/upm-package-hub.git",
+            "category": "Tools",
+            "dependencies": []
+        },
+        {
+            "name": "com.areezkhan79.scratchpkg",
+            "displayName": "Scratch Packages",
+            "description": "test scratch package creation",
+            "repoUrl": "https://github.com/areezkhan79/scratchpkg-test2.git",
+            "category": "Test",
+            "dependencies": []
+        }
+    ]
 }
