@@ -14,13 +14,18 @@ to `registry.json`:
   "displayName": "<Human readable name>",
   "description": "<One line description>",
   "repoUrl": "https://github.com/areezkhan79/<repo>.git",
-  "category": "<optional grouping, e.g. Systems, Tools, UI>"
+  "category": "<optional grouping, e.g. Systems, Tools, UI>",
+  "dependencies": ["com.areezkhan79.<other-module>"]
 }
 ```
 
 `name` must exactly match the `name` field in that package's own `package.json`.
 `category` is optional — Package Hub groups packages by it in the UI, with
-uncategorized entries falling into an "Other" group. Available versions are
-**not** listed here — Package Hub fetches them live from each repo's git tags,
-so you never need to update this file when you cut a new release, only when
-you add a brand-new package.
+uncategorized entries falling into an "Other" group. `dependencies` is
+optional — a list of other package `name`s (from this or any other configured
+registry) that this package requires; checking a package in Package Hub
+auto-checks its dependencies too, and locks their checkbox (showing
+"Required by: ...") so they can't be unchecked while still required. Available
+versions are **not** listed here — Package Hub fetches them live from each
+repo's git tags, so you never need to update this file when you cut a new
+release, only when you add a brand-new package.
