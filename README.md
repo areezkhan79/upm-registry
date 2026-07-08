@@ -13,11 +13,14 @@ to `registry.json`:
   "name": "com.areezkhan79.<module>",
   "displayName": "<Human readable name>",
   "description": "<One line description>",
-  "repoUrl": "https://github.com/areezkhan79/<repo>.git"
+  "repoUrl": "https://github.com/areezkhan79/<repo>.git",
+  "category": "<optional grouping, e.g. Systems, Tools, UI>"
 }
 ```
 
 `name` must exactly match the `name` field in that package's own `package.json`.
-Available versions are **not** listed here — Package Hub fetches them live from
-each repo's git tags, so you never need to update this file when you cut a new
-release, only when you add a brand-new package.
+`category` is optional — Package Hub groups packages by it in the UI, with
+uncategorized entries falling into an "Other" group. Available versions are
+**not** listed here — Package Hub fetches them live from each repo's git tags,
+so you never need to update this file when you cut a new release, only when
+you add a brand-new package.
