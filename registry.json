@@ -1,0 +1,10 @@
+{
+  "packages": [
+    {
+      "name": "com.areezkhan79.starter",
+      "displayName": "UPM Starter",
+      "description": "Starter/template module used to validate the git-based install pipeline.",
+      "repoUrl": "https://github.com/areezkhan79/upm-starter.git"
+    }
+  ]
+}
